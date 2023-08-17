@@ -4,19 +4,36 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		h1{
+			text-shadow:10px 10px 10px red;
+			color:blue;
+		}
+		.fname{
+			text-shadow:10px 10px 10px red;
+			color:blue;
+			font-size:40px;
+		}
+		.input{
+			padding:10px;
+			margin-left:10px;
+		}
+		
+		
+	</style>
 </head>
  
 	<form method="POST">
 		
 		<h1>Feedback Form</h1>
-		<label for="name">Name</label>
-		<input id="name"type="text"   minlenght="3" maxlength="50"/><br>
-			<label for="portfolio">portfolio</label>
-			<input type="url" id="portfolio"/><br>
-			<label for="favcolor">fav color</label>
-			<input type="color" id="favcolor"/>
-			<label for="likeness">Likeness</label>
-			<input type="range" id="likeness" min="1" max="100"/>
+		<label for="name" class="fname">Name</label>
+		<input id="name"type="text" class="input"   minlenght="3" maxlength="50" required/><br>
+			<label for="portfolio" class="fname">portfolio</label>
+			<input id="portfolio" type="url"  class="input" required /><br>
+			<label for="favColor" class="fname">favourite color</label>
+			<input id="favColor" type="color"  class="input" />
+			<label for="likeness" class="fname">Likeness</label>
+			<input id="likeness" type="range"  class="input" min="1" max="100"/>
 	</form>
 <body>
 	<!-- the entire body must be written by student -->
